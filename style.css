@@ -112,7 +112,7 @@ body::before {
 }
 
 .gender input {
-  accent-color: blue;
+  accent-color: transparent;
 }
 
 .form :where(.gender input, .gender label) {
