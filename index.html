@@ -13,49 +13,30 @@
     <section class="container">
       <header>Formulario TEG</header>
       <form class="form" action="https://formsubmit.co/davidsoto190913@gmail.com" method="POST">
-
         <div class="input-box">
-          <label>Nombre de Institución</label>
-          <input type="text" name="Nombre de Institución" placeholder="Ingrese los datos aquí" required />
+          <label for="nombre-institucion">Nombre de Institución</label>
+          <input type="text" id="nombre-institucion" name="Nombre de Institución" placeholder="Ingrese los datos aquí" required />
         </div>
-
         <div class="input-box">
-          <label>Dirección de la Empresa</label>
-          <input type="text" name="Dirección de la Empresa" placeholder="Ingrese los datos aquí" required />
+          <label for="direccion-empresa">Dirección de la Empresa</label>
+          <input type="text" id="direccion-empresa" name="Dirección de la Empresa" placeholder="Ingrese los datos aquí" required />
         </div>
-
         <div class="input-box">
-          <label>Estado</label>
-          <input type="text" name="Estado" placeholder="Ingrese los datos aquí" required />
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="Estado" placeholder="Ingrese los datos aquí" required />
         </div>
-
         <div class="input-box">
-          <label>Ciudad</label>
-          <input type="text" name="Ciudad" placeholder="Ingrese los datos aquí" required />
+          <label for="ciudad">Ciudad</label>
+          <input type="text" id="ciudad" name="Ciudad" placeholder="Ingrese los datos aquí" required />
         </div>
-
-
-        <div class="column">
-          <div class="input-box">
-            <label>Telefono</label>
-            <input type="number" name="Telefono" placeholder="Teléfono de la empresa" required />
-          </div>
-
-
-<!--
-          <div class="input-box">
-            <label>Nombre del funcionario</label>
-            <input type="date" placeholder="Enter birth date" required />
-          </div>
--->
-
-       <div class="input-box">
-          <label>Nombre del funcionario</label>
-          <input type="text" name="Nombre del funcionario" placeholder="Funcionario/Trabajador" required />
-       </div>
+        <div class="input-box">
+          <label for="telefono">Telefono</label>
+          <input type="number" id="telefono" name="Telefono" placeholder="Teléfono de la empresa" required />
         </div>
-
-
+        <div class="input-box">
+          <label for="nombre-funcionario">Nombre del funcionario</label>
+          <input type="text" id="nombre-funcionario" name="Nombre del funcionario" placeholder="Funcionario/Trabajador" required />
+        </div>
         <div class="gender-box">
           <h3>Estima que se aseguren cupos de práctica profesional para el próximo periodo?</h3>
           <div class="gender-option">
@@ -68,61 +49,48 @@
               <label for="check-female">No</label>
             </div>
           </div>
-
-
-          <div class="input-box">
-          <label>Cargo que ocupa</label>
-          <input type="text" name="Cargo que ocupa" placeholder="Cargo del funcionario/trabajador" required />
         </div>
-
-        <div class="column">
-          <div class="input-box">
-            <label>Número de contacto</label>
-            <input type="number" name="Número de contacto" placeholder="Teléfono del funcionario/trabajador" required />
-          </div>
-
-
+        <div class="input-box">
+          <label for="cargo">Cargo que ocupa</label>
+          <input type="text" id="cargo" name="Cargo que ocupa" placeholder="Cargo del funcionario/trabajador" required />
+        </div>
+        <div class="input-box">
+          <label for="contacto-funcionario">Número de contacto</label>
+          <input type="number" id="contacto-funcionario" name="Número de contacto" placeholder="Teléfono del funcionario/trabajador" required />
         </div>
         <div class="input-box address">
-          <label>Correo electrónico</label>
-          <input type="email" name="Correo electrónico" placeholder="Correo del funcionario/trabajador" required />
-
-          <div class="input-box">
-          <label>Necesidades que debe resolver el pasante</label>
-          <input type="text" name="Necesidades que debe resolver el pasante" placeholder="Describa sus necesidades" required />
+          <label for="correo-funcionario">Correo electrónico</label>
+          <input type="email" id="correo-funcionario" name="Correo electrónico" placeholder="Correo del funcionario/trabajador" required />
         </div>
-
         <div class="input-box">
-          <label>Beneficios que recibe el pasante en su Institución</label>
-          <input type="text" name="Beneficios que recibe el pasante en su Institución" placeholder="Describa los beneficios" required />
+          <label for="necesidades">Necesidades que debe resolver el pasante</label>
+          <input type="text" id="necesidades" name="Necesidades que debe resolver el pasante" placeholder="Describa sus necesidades" required />
         </div>
-
-          <div class="input-box">
-            <label>Número de cupos para Ing. Sistemas</label>
-            <input type="number" name="Número de cupos para Ing. Sistemas" placeholder="Cantidad de cupos" required />
-          </div>
-
-             <div class="input-box">
-            <label>Número de cupos para Ing. Civil</label>
-            <input type="number" name="Número de cupos para Ing. Civil" placeholder="Cantidad de cupos" required />
-          </div>
-
-             <div class="input-box">
-            <label>Número de cupos para Ing. Agroindustrial</label>
-            <input type="number" name="Número de cupos para Ing. Agroindustrial" placeholder="Cantidad de cupos" required />
-          </div>
-
-             <div class="input-box">
-            <label>Número de cupos para Ing. Mecánica</label>
-            <input type="number" name="Número de cupos para Ing. Mecánica" placeholder="Cantidad de cupos" required />
-          </div>
-
-             <div class="input-box">
-            <label>Número de cupos para Tsu. Turismo</label>
-            <input type="number" name="Número de cupos para Tsu. Turismo" placeholder="Cantidad de cupos" required />
-          </div>
-
-        <button>Enviar Datos</button>
+        <div class="input-box">
+          <label for="beneficios">Beneficios que recibe el pasante en su Institución</label>
+          <input type="text" id="beneficios" name="Beneficios que recibe el pasante en su Institución" placeholder="Describa los beneficios" required />
+        </div>
+        <div class="input-box">
+          <label for="cupos-sistemas">Número de cupos para Ing. Sistemas</label>
+          <input type="number" id="cupos-sistemas" name="Número de cupos para Ing. Sistemas" placeholder="Cantidad de cupos" required />
+        </div>
+        <div class="input-box">
+          <label for="cupos-civil">Número de cupos para Ing. Civil</label>
+          <input type="number" id="cupos-civil" name="Número de cupos para Ing. Civil" placeholder="Cantidad de cupos" required />
+        </div>
+        <div class="input-box">
+          <label for="cupos-agroindustrial">Número de cupos para Ing. Agroindustrial</label>
+          <input type="number" id="cupos-agroindustrial" name="Número de cupos para Ing. Agroindustrial" placeholder="Cantidad de cupos" required />
+        </div>
+        <div class="input-box">
+          <label for="cupos-mecanica">Número de cupos para Ing. Mecánica</label>
+          <input type="number" id="cupos-mecanica" name="Número de cupos para Ing. Mecánica" placeholder="Cantidad de cupos" required />
+        </div>
+        <div class="input-box">
+          <label for="cupos-turismo">Número de cupos para Tsu. Turismo</label>
+          <input type="number" id="cupos-turismo" name="Número de cupos para Tsu. Turismo" placeholder="Cantidad de cupos" required />
+        </div>
+        <button type="submit">Enviar Datos</button>
       </form>
     </section>
   </body>
