@@ -9,35 +9,25 @@
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  max-width: 100%;
-  background-image: url("bg1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-height: 100%;
+  background-color: black;
 }
 
 .container {
   position: relative;
-  max-width: 500px;
-  max-height: 460px;
-  width: 100%;
-  background: black;
+  max-width: 100%;
+  width: 500px; /* Puedes ajustar este valor para controlar el ancho máximo */
+  background: transparent;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  overflow-y: scroll;
-  opacity: 0.7;
-  -moz-opacity: 0.5;
-  filter: alpha(opacity=50);
-  -khtml-opacity: 0.5;
+  opacity: 0.8;
+  z-index: 1;
 }
 
 .container header {
@@ -51,6 +41,21 @@ body {
   margin-top: 30px;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("bg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+}
+
 .form .input-box {
   width: 100%;
   margin-top: 20px;
@@ -58,7 +63,7 @@ body {
 }
 
 .input-box label {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .form :where(.input-box input, .select-box) {
@@ -72,6 +77,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0 15px;
+  opacity: 0.6;
 }
 
 .input-box input:focus {
@@ -114,7 +120,7 @@ body {
 }
 
 .gender label {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .address :where(input, .select-box) {
@@ -149,6 +155,11 @@ body {
 
 /* Responsive */
 @media screen and (max-width: 600px) {
+  .container {
+    width: 100%; /* Ajustar el contenedor al ancho completo del dispositivo móvil */
+    padding: 15px; /* Reducir el relleno para dispositivos más pequeños */
+  }
+
   .form .column {
     flex-wrap: wrap;
   }
