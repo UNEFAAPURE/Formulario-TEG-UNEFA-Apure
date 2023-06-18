@@ -16,7 +16,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("bg.jpg");
+  background-image: url("bg6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 540px;
+  max-width: 500px;
   max-height: 460px;
   width: 100%;
   background: black;
